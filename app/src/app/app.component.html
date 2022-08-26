@@ -1,0 +1,65 @@
+<form>
+  <div  class="ms-3 border border-dark ps-3 mt-5 card  d-flex aligns-items-center justify-content-center "
+  style="width:450px"  >
+    <h1 class=" ">Template-driven Forms </h1>
+  <div class="card-body" >
+  <!-- <div class="row">
+      <div class="mb-1 form-group">
+    <div class="col-6">
+      <label class="form-control"> Name</label>
+    </div>
+    <div class="col-6"><input type="text" class="form-control"></div> -->
+
+
+    <div class="row">
+      <div class="col">
+  <div class="mb-1 form-group">
+    <span class="form-control" id="username">First Name</span>
+    <label for="username" class="form-label"></label>
+    </div>
+    </div>
+    <div class="col">
+    <input type="text" class="form-control " required id="username" name="username" >
+  </div>
+  </div>
+  <div class="row">
+
+    <div class="col">
+      <div class="mb-1 form-group">
+        <span class="form-control" id=email>Email</span>
+        <label for="email" class="from-label"></label></div></div>
+    <div class="col">
+      <input type="email" class="form-control" required id="email" name="email">
+    </div>
+   </div>
+<div  class="row">
+
+  <div class="col">
+    <div class="mb-1 form-group">
+      <span id="gender" class="form-control">Gender</span>
+      <label for="gender" class="form-label"></label>
+    </div>
+
+  </div>
+  <div class="col">
+    <select
+    name="gender"
+    class="form-control"
+    id="gender"
+
+    >
+<option *ngFor="let type of gender">{{type}}</option>
+    </select>
+  </div>
+</div>
+</div>
+
+
+
+
+
+  </div>
+
+
+
+</form>
